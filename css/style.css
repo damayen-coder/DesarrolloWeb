@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color: #000;
+}
 
 body{
   background: white;
@@ -11,7 +15,7 @@ body{
 }
 
 .contenedor{
-  width: 95%;
+  width: 100%;
  
   margin: 10px auto;
   display: grid;
@@ -115,10 +119,10 @@ grid-area: footer;
   margin: 20px auto;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto);
 
-  grid-template-areas: "foot-1 foot-2 foot-3 foot-4";
+  grid-template-areas: "foot-1 foot-2 foot-4";
 }
 
 .footercont .foot-1{
@@ -139,15 +143,6 @@ grid-area: footer;
   justify-content: center;
 }
 
-.footercont .foot-3{
-  background: #55a8fd;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .footercont .foot-4{
   background: #55a8fd;
   color: #fff;
@@ -157,15 +152,13 @@ grid-area: footer;
 
 .list{
   display: flex;
-  padding-left: 10px;
+  padding: 10px;
   flex-direction: column;
   text-align: center;
 }
 
 .foot-4 a{
-  text-decoration: none;
-  padding-top: 10px;
-   
+  padding-top: 10px;   
 }
 
 
@@ -198,20 +191,17 @@ grid-area: footer;
 }
 
 .navcont a{
-  color: #fff;
   display: inline-block;
   padding: 20px;
   width: 100%;
   text-align: center;
-  color: #000;
   transition: .3s ease-out all;
-  text-decoration: none;
+
 }
 
 .navcont a:hover{
   background: #1d2f3d;
   color: #fff;
-  text-decoration: none;
 }
 
 @media (max-width: 768px){
