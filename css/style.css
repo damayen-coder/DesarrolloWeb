@@ -9,9 +9,9 @@ a{
 }
 
 body{
-  background: white;
+  background: #12203f;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 .contenedor{
@@ -37,8 +37,7 @@ grid-template-areas: "header header header"
 .contenedor .sidebar,
 .contenedor .footer{
   background: #fff;
-  padding: 20px;
-  border-radius: 4px;
+
 }
 
 .contenedor .header{
@@ -49,18 +48,48 @@ grid-template-areas: "header header header"
 
 }
 .contenedor .contenido{
-  background: #1d3f12;
+  background: #12203f;
   color:#fff;
-  text-align: center;
   display: flex;
+  justify-content: left;
   align-items: center;
-  justify-content: center;
   grid-area: contenido;
   
 }
 
+.razones{
+  background: #ffcd48;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 100px;
+  justify-content: center;
+  
+}
+
+.mujer{
+  display: block;
+  width: 50%;
+  float: right;
+  margin: auto;
+}
+
+.razones h2{
+  font-size: 30px;
+  color: #000;
+}
+.razones li{
+  display: block;
+  color: #000;
+  list-style-type: none;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 2px;
+}
+
+
 .contenedor .sidebar{
-    background: #faa43d;
+  background: #faa43d;
   min-height: 100px;
   text-align: center;
   display: flex;
@@ -73,11 +102,7 @@ grid-template-areas: "header header header"
 .contenedor .widget-1{
   background: #55a8fd;
   color: #fff;
-  height: 100px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   grid-area: widget-1;
 
 }
@@ -85,35 +110,66 @@ grid-template-areas: "header header header"
 .contenedor .widget-2{
   background: #55a8fd;
   color: #fff;
-  height: 100px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   grid-area: widget-2;
 }
 
 .contenedor .widget-3{
   background: #55a8fd;
   color: #fff;
-  height: 100px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   grid-area: widget-3;
 }
 
-.contenedor .footer{
-background: #12203e;
-color: #fff;
+.article{
+ text-align: center;
+}
 
-grid-area: footer;
+.tit{
+  color: #e12c26;
+  outline-color: #000;
+}
+
+
+.libro{
+  padding: 10px;
+  width: 80px;
+  float: left;
+}
+
+.Inscribirme{
+  width: 90%;
+  height: 40px;
+  padding-bottom: 10px;
+  background: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Inscribirme span{
+  position: relative;
+  z-index: 2;
 }
 
 
 
-/* footer test*/
+.contenedor .footer{
+ background: #12203e;
+ color: #fff;
+
+ grid-area: footer;
+}
+
+
+
+/*-------------------------*/
+/*--------FOOTER-----------*/
+/*-------------------------*/
 
 .footercont{
   margin: 20px auto;
@@ -138,9 +194,33 @@ grid-area: footer;
   background: #55a8fd;
   color: #fff;
   text-align: center;
+}
+
+.Sedes{
   display: flex;
-  align-items: center;
   justify-content: center;
+  
+}
+
+.ListSedes{
+  
+  display: inline-block;
+}
+
+.foot-2 h3{
+  padding: 10px;
+}
+
+.foot-2 ul{
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 .footercont .foot-4{
@@ -161,6 +241,11 @@ grid-area: footer;
   padding-top: 10px;   
 }
 
+.copy{
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
 
 
 
@@ -207,5 +292,28 @@ grid-area: footer;
 @media (max-width: 768px){
   .navcont{
     flex-direction: column;
+  }
+
+  .contenedor{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+  
+  grid-template-areas: "header header header"
+                       "contenido contenido contenido"
+                       "contenido contenido contenido"
+                       "sidebar sidebar sidebar"
+                       "widget-1 widget-2 widget-3"
+                       "footer footer footer";
+  
+  }
+
+  .footercont{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+  
+    grid-template-areas: "foot-1"
+                         "foot-2"
+                         "foot-4";
+
   }
 }
