@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Enseñansa de Ingles</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="./css/anim.css">
+
+</head>
+<body>
+  
+  <div class="contenedor">
+      <header class="header">
+        <div class="banner">
+          <img src="../img/header.jpg" alt="banner web" class="bannerhead">
+        </div>
+        <nav class="navcont">
+            <a href="#">Inicio</a>
+            <a href="#">Nuestros Cursos</a>
+            <a href="#">Como Llegar</a>
+            <a href="#">Acerca de CEI</a>
+            <a href="#">Contactenos</a>
+            <a href="#">PreInscripcion</a>
+        </nav>
+      </header>
+      
+      <main class="contact">
+        <div class="formulario">
+          <h1>Formulario</h1>
+          <p>Envianos un mensaje, nos contactaremos a la brevedad.</p>
+          <br>
+          <div class="conformu">
+            <form action="#" class="form-horizontal">
+              <div class="control-group">
+                <label for="" class="control-label">Tipo de consulta</label>
+                <div class="controls">
+                  <select name="tipo" id="">
+                    <option value="">Elija un tipo de consulta</option>
+                    <option value="2">Consultas Generales</option>
+                    <option value="3">Coordinación Academica</option>
+                    <option value="4">Departamento Servicios Especiales a Empresas</option>
+                    <option value="5">Departamento Establecimientos Educativos</option>
+                    <option value="6">Departamento de Marketing</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label for="" class="control-label">Sede:</label>
+                <div class="controls">
+                  <select name="sede" id="">
+                    <option value="">Elija una Sede</option>
+                    <option value="2">Casa Central</option>
+                    <option value="3">Belgrano</option>
+                    <option value="4">Centro</option>
+                    <option value="5">Flores</option>
+                    <option value="6">Lanús</option>
+                    <option value="7">Moreno</option>
+                    <option value="8">Santa Fe</option>
+                    <option value="9">Cordoba</option>
+                    <option value="10">Salta</option>
+                    <option value="11">Santa Cruz</option>
+                    <option value="12">Misiones</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label for="" class="control-label">Es alumno?:</label>
+                <div class="controls">
+                  <input type="radio" name="es_alumno" class="radio_alumno" value="Si"> "Si"
+                  <br>
+                  <input type="radio" name="es_alumno" class="radio_alumno" value="No"> "No"
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label for="" class="control-label">Curso:</label>
+                <div class="controls">
+                  <select name="curso" id="">
+                    <option value="">Elija un Curso</option>
+                    <option value="2">Cursos de Adultos</option>
+                    <option value="3">Cursos de Niños y pre-adolescentes</option>
+                    <option value="4">Cursos de Adolescentes</option>
+                    <option value="5">Cursos para preparar exámenes de Cambridge</option>
+                    <option value="6">Clases de Conversación</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label for="" class="control-label">Nombre y apellido:</label>
+                <input type="text" id="nombre" name="nombre" value="" required="">
+              </div>
+              <div class="control-group">
+                <label for="" class="control-label">Email:</label>
+                <input type="text" id="email" name="email" value="" required="">
+              </div>
+              <div class="control-group">
+                <label for="" class="control-label">Telefono:</label>
+                <input type="text" id="telefono" name="telefono" value="" required="">
+              </div>
+              <div class="control-group">
+                <label class="control-label">Consulta:</label>
+                <div class="controls">
+                  <textarea rows="3" name="consulta" id="consulta"></textarea>
+                </div>
+              </div>
+              <div class="control-group">
+                <br>
+                  <button class="btnenviar" id="enviar" type="button">Enviar</button>
+                <br>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+
+
+        <div class="infor">
+          <div class="span5 colDer">
+            <div class="spanIn">
+              <span class="tit">Casa central</span>
+    
+              <div class="dataSedeWrap">
+                <div class="dataSede">
+                  <i class="icon-map-marker"></i><span class="texto azul">Santa Fe 999, Santa Fe, Argentina</span>
+                </div>
+                <div class="dataSede">
+                  <i class="icon-th"></i><span class="texto">0900-2312-INGLES (464537)</span>
+                </div>
+                <div class="dataSede">
+                  <i class="icon-envelope"></i><span class="texto"><a target="_blank" href="mailto:info@liceobritanico.com">info@liceobritanico.com</a></span>
+                </div>
+              </div>
+    
+              <br>
+    
+              <!-- MAPA ********************************************************** -->
+              <script type="text/javascript">
+                var miMapJsonTest = [{direccion:"Callao 362, buenos aires, argentina", title:"Sede Central" }]
+              </script>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9701118065204!2d-58.39458768427821!3d-34.60491728045923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac18f1a0a91%3A0xe315844e8fd0f24c!2sAv.%20Callao%20362%2C%20C1022%20AAQ%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1581600945089!5m2!1ses-419!2sar" width="320" height="340" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="widget-1">
+        <div class="article">
+          <article class="article2">
+              <div>
+                <img src="../img/inscrip.png" alt="libro" class="libro">
+                  <h4 class="fecha">01/11/22</h4><br>
+                  <h4 class="tit">ABIERTA LA INSCRIPCIÓN 2023</h4>
+                  <p class="desc">¡Anticipate! <br> ¡Inscribite con importantes descuentos!</p><br>
+                    <button class="Inscribirme uno"><span>INSCRIBIRME!</span></button>
+              </div>
+          </article>
+        </div>
+      </div>
+      <div class="widget-2">
+        <div class="article">
+          <article class="article2">
+              <div>
+                <img src="../img/inscrip.png" alt="libro" class="libro">
+                  <h4 class="fecha">01/11/22</h4><br>
+                  <h4 class="tit">¡CURSOS INTENSIVOS DE VERANO 100% ONLINE!</h4>
+                  <p class="desc"> <br>¡Inscribite con importantes descuentos!</p><br>
+                    <button class="Inscribirme dos"><span>INSCRIBIRME!</span></button>
+              </div>
+          </article>
+        </div>
+      </div>
+      <div class="widget-3">
+        <div class="article">
+          <article class="article2">
+              <div>
+                <img src="../img/icon_01.png" alt="libro" class="libro">
+                  <h4 class="fecha">01/11/22</h4><br>
+                  <h4 class="tit">¡REALIZAR TEST!</h4>
+                  <p class="desc"> <br>¡Realizá nuestro test para conocer tu nivel de inglés.!</p><br>
+                    <button class="Inscribirme tres"><span>TEST DE NIVEL!</span></button>
+              </div>
+          </article>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footercont">
+          <div class="foot-1">
+            <h3>WIDGET 1</h3>
+          </div>
+          <div class="foot-2">
+            <div class="Sedes">
+              <h3>Nuestras Sedes</h3>
+            </div>
+            <div class="ListSedes">
+              <ul>
+                <li>Belgrano</li><hr/>
+                <li>Centro</li><hr/>
+                <li>Flores</li><hr/>
+                <li>Lanús</li><hr/>
+                <li>Moreno</li><hr/>
+              </ul>
+            </div>
+            <div class="ListSedes">
+              <ul>
+                <li>Santa Fe</li><hr/>
+                <li>Cordoba</li><hr/>
+                <li>Salta</li><hr/>
+                <li>Santa Cruz</li><hr/>
+                <li>Misiones</li><hr/>
+              </ul>
+            </div>
+          </div>
+          <div class="foot-4">
+            <div class="Sedes">
+              <h3>Nuestras Redes Sociales:</h3>
+            </div>
+            <div class="list">
+              <a href="www.facebook.com" target="_blank">
+                <img src="/img/icon_fc.png" alt="" class="icon">
+                Facebook
+              </a>
+              <a href="www.instagram.com" target="_blank">
+                <img src="/img/icono-instagram.png" alt="" class="icon">
+                Instagram
+              </a>
+              <a href="www.whatsapp.com" target="_blank">
+                <img src="/img/wapp.png" alt="" class="icon">
+                Whatsapp
+              </a>
+            </div>
+            <div class="list">
+              <a href="www.gmail.com" target="_blank">
+                <img src="/img/icon_mail.png" alt="" class="icon">
+                E-mail 
+              </a>
+              <a href="ar.linkedin.com" target="_blank">
+                <img src="/img/linkedin.png" alt="" class="icon">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copy">
+          <p>Centro de Enseñansa de Ingles 2022 - info@cei.com - 0900-2312-INGLES</p>
+        </div>
+      </footer>
+  </div>
+</body>
+</html>

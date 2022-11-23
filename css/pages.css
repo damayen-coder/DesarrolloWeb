@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+.contact{
+    width: 0%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 2, 2f;
+    grid-template-rows: 1;
+    grid-template-areas: "formulario infor";
+}
+
+.contact .formulario{ 
+    padding-right: 10%;
+    background-color: aqua;
+
+    grid-area: formulario;
+}
+
+.contact .infor{
+    background-color: aqua;
+    grid-area: infor;
+}
+
+.btnenviar{
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: .8em;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+.contact{
+    display: grid;
+    grid-template-columns: 1, 2f;
+    grid-template-rows: 2;
+    grid-template-areas: "formulario"
+                         "infor";
+}  
+
+}

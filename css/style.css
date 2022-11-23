@@ -71,6 +71,7 @@ grid-template-areas: "header header header"
   width: 50%;
   float: right;
   margin: auto;
+  
 }
 
 .razones h2{
@@ -85,6 +86,7 @@ grid-template-areas: "header header header"
   margin-top: 12px;
   margin-bottom: 12px;
   margin-left: 2px;
+
 }
 
 
@@ -137,10 +139,15 @@ grid-template-areas: "header header header"
   float: left;
 }
 
+
+/*----------------*/
+/*-----BOTONES----*/
+/*----------------*/
+
 .Inscribirme{
   width: 90%;
   height: 40px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   background: #000000;
   color: #fff;
   border: none;
@@ -205,6 +212,8 @@ grid-template-areas: "header header header"
 .ListSedes{
   
   display: inline-block;
+  font-size: 20px;
+
 }
 
 .foot-2 h3{
@@ -212,15 +221,11 @@ grid-template-areas: "header header header"
 }
 
 .foot-2 ul{
-  margin: 0;
-  padding: 0;
-  display: block;
+  display: inline-block;
   list-style-type: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  margin-bottom: 12px;
+  margin-left: 2px;
+  padding-inline: 40px;
 }
 
 .footercont .foot-4{
@@ -235,6 +240,7 @@ grid-template-areas: "header header header"
   padding: 10px;
   flex-direction: column;
   text-align: center;
+
 }
 
 .foot-4 a{
